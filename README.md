@@ -28,16 +28,23 @@
 
 
 ## Pros.
+* Simplicity in development.
+* Wide support.
+* State-Less.
 
 
 
 
 
 ## Cons.
-* Open a new TCP connection to a server at each request.
+* Ineffective resource usage. Open a new TCP connection to a server at each request.
 * It does not compress headers (which are plaintext).
-* It only works whit Request/Response mechanism (no server push). 
+* Communication rigidity. It only works whit Request/Response mechanism (no server push). 
 * Duplication Of Data.
+* Message Overhead (not binary, is plaintext).
+* Average Performance.
+* Lack of Resilience (no Back Pressure).
+
 
 
 
